@@ -13,7 +13,7 @@ namespace ConsoleApp1
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime Birthday { get; set; }
-        public List<Grade> Grades { get; set; }
+        public CustomList<Grade> Grades { get; set; }
         public Student(string name, string surname, DateTime birthday)
                                                    
         {
@@ -21,7 +21,7 @@ namespace ConsoleApp1
             Name = name;
             Surname = surname;
             Birthday = birthday;
-            Grades = new List<Grade>();
+            Grades = new CustomList<Grade>();
         }
         public void AddGrade(Grade grade)
         {

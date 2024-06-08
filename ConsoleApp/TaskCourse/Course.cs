@@ -12,10 +12,10 @@ namespace ConsoleApp1
         private static int id = 1;
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<Group> Groups { get; set; }
+        public CustomList<Group> Groups { get; set; }
         public Course(string name) 
         {
-            Groups = new List<Group>();
+            Groups = new CustomList<Group>();
             Id = id++;
             Name = name;
         }
