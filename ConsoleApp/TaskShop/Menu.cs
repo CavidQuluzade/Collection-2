@@ -26,12 +26,12 @@ namespace TaskShop
             }
             else
             {
-                if (type == "c")
+                if (type.ToLower() == "c")
                 {
                     type = "Coffee";
                     shop.products.Add(new Coffee { Name = name, Count = count, Price = price, Type = type });
                 }
-                else if (type == "t")
+                else if (type.ToLower() == "t")
                 {
                     type = "Tea";
                     shop.products.Add(new Tea { Name = name, Count = count, Price = price, Type = type});
